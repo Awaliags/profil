@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Profil Pengguna</h1>
+
+    <div class="profile-section">
+      <div class="profile-card">
+        <img id="user-photo" src="" alt="User Photo" />
+        <h2 id="user-name">Name</h2>
+      </div>
+
+      <div class="info-card">
+
+        <div class="info-grid">
+          <div class="info-item">
+            <p class="label">Nama Lengkap</p>
+            <span id="full-name">-</span>
+          </div>
+
+          <div class="info-item">
+            <p class="label">Tanggal Lahir</p>
+            <span id="birth-date">-</span>
+          </div>
+
+          <div class="info-item">
+            <p class="label">Email</p>
+            <span id="email">-</span>
+          </div>
+
+          <div class="info-item">
+            <p class="label">Alamat</p>
+            <span id="address">-</span>
+          </div>
+
+          <div class="info-item">
+            <p class="label">Negara</p>
+            <span id="country">-</span>
+          </div>
+        </div>
+
+        <div class="button-wrapper">
+          <button id="refresh">Tampilkan Pengguna Lain</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="api/random_api.js"></script>
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
